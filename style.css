@@ -389,6 +389,7 @@ Media Query for any device in Portait Mode (Mobile)
 
   section {
     height: calc(100vh - 27rem);
+    width: calc(100vw - 17rem);
     padding: 0;
     margin-bottom: 5vh;
     font-size: 5rem;
@@ -480,9 +481,13 @@ Media Query for any device in Portait Mode (Mobile)
   text-align: center;
   margin: 0 20%;
   padding: 0 5%;
-  background-color: #2d2f3350;
+  background-color: #2d2f33dd;
   height: 100%;
   max-height: 100%;
+}
+
+.game-projects-text h2 {
+  padding-top: 5%;
 }
 
 /* Sub "Game Projects" Page 1 step from Home Page */
@@ -547,24 +552,26 @@ Media Query for any device in Portait Mode (Mobile)
   grid-column: 1/2;
   grid-row: 1/2;
 
+  font-size: 3.5rem;
   text-align: right;
-  margin: 10rem 0 10rem 10rem;
+  margin: auto;
+  margin-top: 10%;
+  padding: 2rem;
   border: 1rem solid white;
-  padding: 2rem 5rem;
 }
 
 .writing-text {
   /* Placing where the section sits on the website */
-  grid-column: 2/32;
+  grid-column: 2/3;
   grid-row: 1/2;
 
+  margin-top: calc(10% - 2rem);
   text-align: left;
-  margin: 10rem 0 0 5rem;
 }
 
 .concept-art {
   display: grid;
-  grid-template-columns: 50% 1fr;
+  grid-template-columns: 50% 50%;
   grid-template-rows: 1fr;
 }
 
@@ -574,7 +581,7 @@ Media Query for any device in Portait Mode (Mobile)
   grid-row: 1/2;
 
   text-align: right;
-  margin: 5rem 5rem 0 0;
+  margin: 10% 5rem 0 0;
 }
 
 .concept-art-image {
@@ -583,6 +590,59 @@ Media Query for any device in Portait Mode (Mobile)
   grid-row: 1/2;
 
   text-align: left;
+}
+
+.concept-art-image-grid {
+  /* Placing where the section sits within the sub-game-projects main grid */
+  grid-column: 1/2;
+  grid-row: 2/3;
+
+  /* Set up the grid */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 5rem;
+  margin: 10%;
+  height: 80%;
+}
+
+.concept-art-image-grid div{
+  /** Adjusting the sizing and positioning of the sample artworks **/
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.art-icon-1 {
+  /* Placing where the section sits within the sub-game-projects main grid */
+  grid-column: 1/2;
+  grid-row: 1/2;
+
+  background-image: url("img/DRAW100_Final_Balanced.jpg");
+}
+
+.art-icon-2 {
+  /* Placing where the section sits within the sub-game-projects main grid */
+  grid-column: 2/3;
+  grid-row: 1/2;
+
+  background-image: url("img/DRAW100_Final_Balanced.jpg");
+}
+
+.art-icon-3 {
+  /* Placing where the section sits within the sub-game-projects main grid */
+  grid-column: 1/2;
+  grid-row: 2/3;
+
+  background-image: url("img/DRAW100_Final_Balanced.jpg");
+}
+
+.art-icon-4 {
+  /* Placing where the section sits within the sub-game-projects main grid */
+  grid-column: 2/3;
+  grid-row: 2/3;
+
+  background-image: url("img/DRAW100_Final_Balanced.jpg");
 }
 
 .contact-me {
@@ -627,6 +687,18 @@ Media Query for any device in Portait Mode (Mobile)
   width: 100%;
 }
 
+/*
+Fixing some issues with text overflowing due to square aspect ratios
+
+@media only screen and (max-width: 600px) {
+  .writing {
+    display: grid;
+    grid-template-columns: 40% 1fr;
+    grid-template-rows: 1fr;
+  }
+}
+*/
+
 /* 
 Media Query for any device in Portait Mode (Mobile) BUT FOR SECTION CONTENT
 */
@@ -662,6 +734,53 @@ Media Query for any device in Portait Mode (Mobile) BUT FOR SECTION CONTENT
     grid-template-rows: 30rem;
     grid-gap: 5rem;
     padding: 2rem 5rem;
+  }
+
+  .writing {
+    grid-template-columns: 1fr;
+    grid-template-rows: 40% 1fr;
+  }
+
+  .writing-title {
+    /* Placing where the section sits on the website */
+    grid-column: 1/2;
+    grid-row: 1/2;
+
+    margin-top: 5%;
+    border: 1rem solid white;
+    padding: 2rem;
+  }
+
+  .writing-text {
+    /* Placing where the section sits on the website */
+    grid-column: 1/2;
+    grid-row: 2/3;
+
+    text-align: center;
+  }
+
+  .concept-art {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 40% 1fr;
+  }
+
+  .concept-art-text {
+    /* Placing where the section sits on the website */
+    grid-column: 1/2;
+    grid-row: 1/2;
+
+    text-align: left;
+    margin: 10% 10rem;
+  }
+
+  .concept-art-image {
+    /* Placing where the section sits on the website */
+    grid-column: 1/2;
+    grid-row: 2/3;
+
+    text-align: left;
+    margin: 0;
   }
 
 }
