@@ -247,7 +247,7 @@ a.anchor {
   grid-row: 5/6;
 
   background: white;
-  border-left: .75rem solid #2d2f33;
+  border-left: .70rem solid #2d2f33;
 }
 
 section {
@@ -507,7 +507,7 @@ Media Query for any device in Portait Mode (Mobile)
 
   text-align: left;
   margin: 5rem 0;
-  padding: auto 5rem;
+  padding: 0 5rem;
   background: #cd3e3f;
 }
 
@@ -518,6 +518,9 @@ Media Query for any device in Portait Mode (Mobile)
 
 .game-icon-row {
   height: 67vh;
+  padding: 0;
+  background: #292A30;
+  color: white;
 }
 
 .game-icon-grid {
