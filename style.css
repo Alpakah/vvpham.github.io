@@ -507,9 +507,8 @@ Media Query for any device in Portait Mode (Mobile)
 
   text-align: left;
   margin: 5rem 0;
-  padding: 0 5rem;
+  padding: auto 5rem;
   background: #cd3e3f;
-  vertical-align: middle;
 }
 
 .sub-game-projects-title p {
@@ -517,7 +516,11 @@ Media Query for any device in Portait Mode (Mobile)
   font-weight: bold;
 }
 
-.game-images-grid {
+.game-icon-row {
+  height: 67vh;
+}
+
+.game-icon-grid {
   /* Placing where the section sits within the sub-game-projects main grid */
   grid-column: 1/2;
   grid-row: 2/3;
@@ -530,7 +533,7 @@ Media Query for any device in Portait Mode (Mobile)
   padding: 2rem 5rem;
 }
 
-.game-images-grid img {
+.game-icon-grid img {
   height: 100%;
   width: 100%;
   vertical-align: middle;
