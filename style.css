@@ -220,6 +220,10 @@ Setting up the main template of the website
   color: white;
 }
 
+.focused-nav a {
+  color: #cd3e3f;
+}
+
 .sub-nav a {
   font-size: 2.5rem;
   padding: 1rem 5rem 1rem 0;
@@ -474,7 +478,11 @@ Media Query for any device in Portait Mode (Mobile)
 
 .game-projects-text {
   text-align: center;
-  padding: 5% 20%;
+  margin: 0 20%;
+  padding: 0 5%;
+  background-color: #2d2f3350;
+  height: 100%;
+  max-height: 100%;
 }
 
 /* Sub "Game Projects" Page 1 step from Home Page */
