@@ -274,7 +274,7 @@ section p {
 Media Query for any device in Portait Mode (Mobile) 
 */
 
-@media only screen and (orientation: portrait) {
+@media only screen and (max-aspect-ratio: 4/3) {
 
   html {
     /* Changing font size dependency on width of screen, rather than height */
@@ -446,7 +446,7 @@ Media Query for any device in Portait Mode (Mobile)
   grid-column: 1/2;
   grid-row: 1/2;
   
-  background-image: url("img/DRAW100_Final_Balanced.jpg");
+  background-image: url("img/Art/SAV_202010_DRAW_VinhPham_LonginInShadows.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -461,17 +461,23 @@ Media Query for any device in Portait Mode (Mobile)
   padding: 10rem 5rem;
 }
 
-/* Sub "About Me" Page 1 step from Home Page */
+/* Sub "About Me" Page, 1 step from Home Page */
 
 .sub-about-me {
   margin: 0;
   padding: 0;
+  background: white;
+  color: #2d2f33;
+}
+
+.sub-about-me button {
+  border: solid #2d2f33;
 }
 
 /* "Game Projects" Page on the Home Page */
 
 .game-projects {
-  background-image: url("https://public.potaufeu.asahi.com/8ade-p/picture/22121024/94e7d5c10ff8ba2975c0c71e5cb29aeb.jpg");
+  background-image: url("img/Games/GGJ2021/AstroNautical_desktop_background_01.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -490,7 +496,7 @@ Media Query for any device in Portait Mode (Mobile)
   padding-top: 5%;
 }
 
-/* Sub "Game Projects" Page 1 step from Home Page */
+/* Sub "Game Projects", Page 1 step from Home Page */
 
 .sub-game-projects {
   /* Set up the grid */
@@ -541,11 +547,16 @@ Media Query for any device in Portait Mode (Mobile)
   width: 100%;
   vertical-align: middle;
   object-fit: cover;
+  z-index: 1;
 }
 
 .game-icon {
   text-align: center;
 }
+
+/* 
+CSS for the Sliding Gallery of Images in each Game Project Description
+*/
 
 .writing {
   display: grid;
@@ -558,10 +569,11 @@ Media Query for any device in Portait Mode (Mobile)
   grid-column: 1/2;
   grid-row: 1/2;
 
-  font-size: 3.5rem;
+  font-size: 3rem;
   text-align: right;
   margin: auto;
   margin-top: 10%;
+  margin-right: 0;
   padding: 2rem;
   border: 1rem solid white;
 }
@@ -571,8 +583,17 @@ Media Query for any device in Portait Mode (Mobile)
   grid-column: 2/3;
   grid-row: 1/2;
 
-  margin-top: calc(10% - 2rem);
+  margin: auto;
+  margin-top: 10%;
+  padding: 0 10rem;
   text-align: left;
+}
+
+/* Sub "Writing" Page, 1 step from Home Page */
+
+.sub-writing {
+  margin: 0;
+  padding: 0;
 }
 
 .concept-art {
@@ -588,6 +609,7 @@ Media Query for any device in Portait Mode (Mobile)
 
   text-align: right;
   margin: 10% 5rem 0 0;
+  padding-left: 10%;
 }
 
 .concept-art-image {
@@ -619,12 +641,19 @@ Media Query for any device in Portait Mode (Mobile)
   background-size: cover;
 }
 
+/* Sub "Concept Art" Page, 1 step from Home Page */
+
+.sub-concept-art {
+  margin: 0;
+  padding: 0;
+}
+
 .art-icon-1 {
   /* Placing where the section sits within the sub-game-projects main grid */
   grid-column: 1/2;
   grid-row: 1/2;
 
-  background-image: url("img/DRAW100_Final_Balanced.jpg");
+  background-image: url("img/Art/SAV_202030_FOUN_DRAW250_PhamVinh_A4BestFriends.jpg");
 }
 
 .art-icon-2 {
@@ -632,7 +661,7 @@ Media Query for any device in Portait Mode (Mobile)
   grid-column: 2/3;
   grid-row: 1/2;
 
-  background-image: url("img/DRAW100_Final_Balanced.jpg");
+  background-image: url("img/Art/SAV_202030_FOUN_DRAW250_PhamVinh_Best_Final.jpg");
 }
 
 .art-icon-3 {
@@ -640,7 +669,7 @@ Media Query for any device in Portait Mode (Mobile)
   grid-column: 1/2;
   grid-row: 2/3;
 
-  background-image: url("img/DRAW100_Final_Balanced.jpg");
+  background-image: url("img/Art/3D_Market_Stall/P1_Pham_01.jpg");
 }
 
 .art-icon-4 {
@@ -648,7 +677,7 @@ Media Query for any device in Portait Mode (Mobile)
   grid-column: 2/3;
   grid-row: 2/3;
 
-  background-image: url("img/DRAW100_Final_Balanced.jpg");
+  background-image: url("img/Art/3D_Market_Stall/P1_Pham_02.jpg");
 }
 
 .contact-me {
@@ -709,7 +738,7 @@ Fixing some issues with text overflowing due to square aspect ratios
 Media Query for any device in Portait Mode (Mobile) BUT FOR SECTION CONTENT
 */
 
-@media only screen and (orientation: portrait) {
+@media only screen and (max-aspect-ratio: 4/3) {
 
   .about-me {
     display: grid;
@@ -744,7 +773,7 @@ Media Query for any device in Portait Mode (Mobile) BUT FOR SECTION CONTENT
 
   .writing {
     grid-template-columns: 1fr;
-    grid-template-rows: 40% 1fr;
+    grid-template-rows: 42rem 1fr;
   }
 
   .writing-title {
@@ -752,6 +781,8 @@ Media Query for any device in Portait Mode (Mobile) BUT FOR SECTION CONTENT
     grid-column: 1/2;
     grid-row: 1/2;
 
+    text-align: center;
+    margin: auto;
     margin-top: 5%;
     border: 1rem solid white;
     padding: 2rem;
@@ -768,7 +799,7 @@ Media Query for any device in Portait Mode (Mobile) BUT FOR SECTION CONTENT
   .concept-art {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 40% 1fr;
+    grid-template-rows: 60rem 1fr;
   }
 
   .concept-art-text {
