@@ -461,55 +461,13 @@ Media Query for any device in Portait Mode (Mobile)
   padding: 10rem 5rem;
 }
 
-/* Sub "About Me" Page, 1 step from Home Page */
-
-.sub-about-me {
-  margin: 0;
-  padding: 0;
-  background: white;
-  color: #2d2f33;
-  min-height: 83vh;
-}
-
-.sub-about-me button {
-  border: solid #2d2f33;
-  text-align: center;
-  margin: auto;
-}
-
-/* Setting up the columns in the resume */
-
 .resume-text {
-  /* Set up the grid */
-  display: grid;
-  grid-template-columns: 1fr 30rem;
-  grid-template-rows: 1fr;
-  text-align: left;
-  height: 83vh;
+  margin: auto;
+  padding: 10rem;
+  text-align: center;
 }
 
-.resume-big-column {
-  /* Placing where the section sits on the website */
-  grid-column: 1/2;
-  grid-row: 1/2;
-}
-
-.resume-big-column table {
-  width: 100%;
-  padding: 2%;
-}
-
-.resume-big-column th {
-  width: 100%;
-}
-
-.resume-small-column {
-  /* Placing where the section sits on the website */
-  grid-column: 2/3;
-  grid-row: 1/2;
-}
-
-/* "Game Projects" Page on the Home Page */
+/* "Game Projects" Section on the Home Page */
 
 .game-projects {
   background-image: url("img/Games/GGJ2021/AstroNautical_desktop_background_01.png");
@@ -531,82 +489,7 @@ Media Query for any device in Portait Mode (Mobile)
   padding-top: 5%;
 }
 
-/* Sub "Game Projects", Page 1 step from Home Page */
-
-.sub-game-projects {
-  /* Set up the grid */
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 20rem 1fr;
-  margin-bottom: 0;
-}
-
-.sub-game-projects-title {
-  /* Placing where the section sits on the website */
-  grid-column: 1/2;
-  grid-row: 1/2;
-
-  text-align: left;
-  margin: 5rem 0;
-  padding: 0 5rem;
-  background: #cd3e3f;
-}
-
-.sub-game-projects-title p {
-  font-size: 8rem;
-  font-weight: bold;
-}
-
-.game-icon-row {
-  height: 63vh;
-  padding: 0;
-  background: #292A30;
-  color: white;
-}
-
-.game-icon-grid {
-  /* Placing where the section sits within the sub-game-projects main grid */
-  grid-column: 1/2;
-  grid-row: 2/3;
-
-  /* Set up the grid */
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 40rem;
-  grid-gap: 5rem;
-  padding: 2rem 5rem;
-}
-
-.game-icon-grid img {
-  height: 100%;
-  width: 100%;
-  vertical-align: middle;
-  object-fit: cover;
-  z-index: 1;
-}
-
-.game-icon {
-  text-align: center;
-}
-
-/* 
-CSS for the Sliding Gallery of Images in each Game Project Description
-*/
-
-.game-image-slider {
-  text-align: center;
-  overflow: hidden;
-  color: white;
-  display: flex;
-}
-
-.game-image.slider img {
-  object-fit: cover;
-  height: 20%;
-  width: auto;
-}
-
-
+/* "Writing" Section on the Home Page */
 
 
 .writing {
@@ -640,35 +523,9 @@ CSS for the Sliding Gallery of Images in each Game Project Description
   text-align: left;
 }
 
-/* Sub "Writing" Page, 1 step from Home Page */
-
-.sub-writing {
-  /* Set up the grid */
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 20rem 1fr;
-  margin-bottom: 0;
-}
-
-.sub-writing-title {
-  /* Placing where the section sits on the website */
-  grid-column: 1/2;
-  grid-row: 1/2;
-
-  text-align: left;
-  margin: 5rem 0;
-  padding: 0 5rem;
-  background: #cd3e3f;
-}
-
-.sub-writing-title p {
-  font-size: 8rem;
-  font-weight: bold;
-}
-
-.sub-writing-text {
-
-}
+/*
+"Concept Art" Seciton of the Home Page
+*/
 
 .concept-art {
   display: grid;
@@ -747,7 +604,209 @@ CSS for the Sliding Gallery of Images in each Game Project Description
   background-image: url("img/Art/3D_Market_Stall/P1_Pham_02.jpg");
 }
 
-/* Sub "Concept Art" Page, 1 step from Home Page */
+/*
+"Contact Me" Section of the Home Page
+*/
+
+.contact-me {
+  /* Set up the grid */
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 20rem 1fr;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.contact-me-title {
+  /* Placing where the section sits on the website */
+  grid-column: 1/2;
+  grid-row: 1/2;
+
+  text-align: center;
+  padding: 0;
+  margin: auto;
+}
+
+.contact-me-title h2 {
+  border: 1rem solid white;
+  padding: 2rem 5rem;
+  margin: 10rem 0rem;
+}
+
+.contact-me-text {
+  /* Placing where the section sits on the website */
+  grid-column: 1/2;
+  grid-row: 2/3;
+
+  text-align: left;
+  margin: auto;
+  padding: 0;
+}
+
+/*
+Formatting of all Sub Pages, 1 step from Home Page
+*/
+
+.sub-page {
+  /* Set up the grid */
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 20rem 1fr;
+  margin-bottom: 0;
+}
+
+.sub-page-title {
+  /* Placing where the section sits on the website */
+  grid-column: 1/2;
+  grid-row: 1/2;
+
+  text-align: left;
+  margin: 5rem 0;
+  padding: 0 5rem;
+  background: #cd3e3f;
+}
+
+.sub-page-title {
+  /* Placing where the section sits within the sub-page mian grid */
+  grid-column: 1/2;
+  grid-row: 1/2;
+
+  text-align: left;
+  margin: 5rem 0;
+  padding: 0 5rem;
+  background: #cd3e3f;
+}
+
+.sub-page-title p {
+  font-size: 8rem;
+  font-weight: bold;
+}
+
+/* When the content only has text */
+.sub-page-text {
+  /* Placing where the section sits within the sub-page mian grid */
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+/* When the content has both an image and a description */
+.sub-page-figure {
+  /* Placing where the section sits within the sub-page mian grid */
+  grid-column: 1/2;
+  grid-row: 2/3;
+
+  /* Set up the grid for image and descprition subset*/
+  display: grid;
+  grid-template-columns: 40% 1fr;
+  grid-template-rows: 1fr;
+  margin-bottom: 0;
+}
+
+.sub-page-image {
+  /* Placing where the section sits within the sub-game-text main grid */
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.sub-page-image img {
+  height: auto;
+  width: 90%;
+  padding: auto;
+  margin: 0 5%;
+  vertical-align: middle;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.sub-page-description {
+  /* Placing where the section sits within the sub-game-text main grid */
+  grid-column: 2/3;
+  grid-row: 1/2;
+
+  text-align: left;
+}
+
+/*
+Sub "Game Projects", Page 1 step from Home Page
+*/
+
+.game-icon-grid {
+  /* Set up the grid */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 40rem;
+  grid-gap: 5rem;
+  padding: 2rem 5rem;
+}
+
+.game-icon-grid img {
+  height: 100%;
+  width: 100%;
+  vertical-align: middle;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.game-icon {
+  text-align: center;
+}
+
+/*
+Individual Game Pages
+*/
+
+.sub-game-image-gallery {
+  /* Set up the grid */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 40rem;
+  padding: 2rem 5rem;
+}
+
+.sub-game-image-gallery img {
+  height: 100%;
+  width: 100%;
+  vertical-align: middle;
+  object-fit: cover;
+  z-index: 1;
+}
+
+/*
+Sub "Writing" Page, 1 step from Home Page
+*/
+
+.sub-writing {
+  /* Set up the grid */
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 20rem 1fr;
+  margin-bottom: 0;
+  background:;
+}
+
+.sub-writing-title {
+  /* Placing where the section sits on the website */
+  grid-column: 1/2;
+  grid-row: 1/2;
+
+  text-align: left;
+  margin: 5rem 0;
+  padding: 0 5rem;
+  background: #cd3e3f;
+}
+
+.sub-writing-title p {
+  font-size: 8rem;
+  font-weight: bold;
+}
+
+.sub-writing-text {
+
+}
+
+/*
+Sub "Concept Art" Page, 1 step from Home Page
+*/
 
 .sub-concept-art {
   /* Set up the grid */
@@ -780,44 +839,18 @@ CSS for the Sliding Gallery of Images in each Game Project Description
   grid-row: 2/3;
 }
 
+.sub-concept-art-image img {
+  height: 100%;
+  width: 100%;
+  vertical-align: middle;
+  object-fit: cover;
+  z-index: 1;
+}
+
 .sub-concept-art-text {
   /* Placing where the section sits on the website */
   grid-column: 2/3;
   grid-row: 2/3;
-}
-
-.contact-me {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 20rem 1fr;
-  margin-bottom: 0;
-  text-align: center;
-}
-
-.contact-me-title {
-  /* Placing where the section sits on the website */
-  grid-column: 1/2;
-  grid-row: 1/2;
-
-  text-align: center;
-  padding: 0;
-  margin: auto;
-}
-
-.contact-me-title h2 {
-  border: 1rem solid white;
-  padding: 2rem 5rem;
-  margin: 10rem 0rem;
-}
-
-.contact-me-text {
-  /* Placing where the section sits on the website */
-  grid-column: 1/2;
-  grid-row: 2/3;
-
-  text-align: left;
-  margin: auto;
-  padding: 0;
 }
 
 /*
