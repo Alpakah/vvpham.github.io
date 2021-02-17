@@ -203,7 +203,7 @@ Setting up the main template of the website
 
 .nav-bar a {
   display: block;
-  padding: 3rem 2rem 3rem 0;
+  padding: 2rem 2rem 2rem 0;
   font-size: 3rem;
   margin: 0;
 }
@@ -226,7 +226,7 @@ Setting up the main template of the website
 
 .sub-nav a {
   font-size: 2.5rem;
-  padding: 1rem 5rem 1rem 0;
+  padding: 1rem 5rem 1rem 2rem;
   color: #cd3e3f;
 }
 
@@ -458,7 +458,13 @@ Media Query for any device in Portait Mode (Mobile)
   grid-row: 1/2;
 
   text-align: center;
-  padding: 10rem 5rem;
+  padding: auto;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.about-me-text p {
+  font-size: 3rem;
 }
 
 .resume-text {
@@ -506,7 +512,7 @@ Media Query for any device in Portait Mode (Mobile)
   font-size: 3rem;
   text-align: right;
   margin: auto;
-  margin-top: 10%;
+  margin-top: 8rem;
   margin-right: 0;
   padding: 2rem;
   border: 1rem solid white;
@@ -518,7 +524,7 @@ Media Query for any device in Portait Mode (Mobile)
   grid-row: 1/2;
 
   margin: auto;
-  margin-top: 10%;
+  margin-top: 8rem;
   padding: 0 10rem;
   text-align: left;
 }
@@ -647,12 +653,26 @@ Media Query for any device in Portait Mode (Mobile)
 Formatting of all Sub Pages, 1 step from Home Page
 */
 
+/* Sub Page Template WITH a title */
 .sub-page {
   /* Set up the grid */
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 20rem 1fr;
   margin-bottom: 0;
+}
+
+/* Sub Page Template WITHOUT a title */
+.sub-page-sub {
+  display: grid;
+  margin-bottom: 0;
+  height: auto;
+  padding: 0 5rem;
+}
+
+.sub-page-sub-text {
+  height: 100%;
+  margin: 0;
 }
 
 .sub-page-title {
@@ -687,6 +707,7 @@ Formatting of all Sub Pages, 1 step from Home Page
   /* Placing where the section sits within the sub-page mian grid */
   grid-column: 1/2;
   grid-row: 2/3;
+  padding: 0 5rem;
 }
 
 /* When the content has both an image and a description */
@@ -769,6 +790,46 @@ Individual Game Pages
   vertical-align: middle;
   object-fit: cover;
   z-index: 1;
+}
+
+.game-project-text-columns {
+  /* Set up the grid */
+  display: grid;
+  grid-template-columns: 70% 1fr;
+  grid-template-rows: 1fr;
+
+  margin-bottom: 0;
+  height: auto;
+}
+
+.game-project-big-column {
+  /* Placing where the section sits within the game-project-text-columns main grid */
+  grid-column: 1/2;
+  grid-row: 1/2;
+
+  padding: 0 5rem;
+  font-size: 4rem;
+}
+
+.game-project-small-column {
+  /* Placing where the section sits within the game-project-text-columns main grid */
+  grid-column: 2/3;
+  grid-row: 1/2;
+
+  padding: 5rem;
+  padding-bottom: 0;
+  font-size: 2.5rem;
+}
+
+.game-project-small-column h3 {
+  margin: 0;
+  font-size: 4rem;
+}
+
+.game-project-small-column ul {
+  list-style: square inside;
+  color: white;
+  padding: 0;
 }
 
 /*
