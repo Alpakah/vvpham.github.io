@@ -527,16 +527,16 @@ Media Query for any device in Portait Mode (Mobile)
 }
 
 /*
-"Concept Art" Seciton of the Home Page
+"Digital Art" Seciton of the Home Page
 */
 
-.concept-art {
+.digital-art {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 1fr;
 }
 
-.concept-art-text {
+.digital-art-text {
   /* Placing where the section sits on the website */
   grid-column: 1/2;
   grid-row: 1/2;
@@ -546,7 +546,7 @@ Media Query for any device in Portait Mode (Mobile)
   padding-left: 10%;
 }
 
-.concept-art-image {
+.digital-art-image {
   /* Placing where the section sits on the website */
   grid-column: 2/3;
   grid-row: 1/2;
@@ -554,7 +554,7 @@ Media Query for any device in Portait Mode (Mobile)
   text-align: left;
 }
 
-.concept-art-image-grid {
+.digital-art-image-grid {
   /* Placing where the section sits within the sub-game-projects main grid */
   grid-column: 1/2;
   grid-row: 2/3;
@@ -568,7 +568,7 @@ Media Query for any device in Portait Mode (Mobile)
   height: 80%;
 }
 
-.concept-art-image-grid div{
+.digital-art-image-grid div{
   /** Adjusting the sizing and positioning of the sample artworks **/
   background-position: center;
   background-repeat: no-repeat;
@@ -760,20 +760,7 @@ Formatting of all Sub Pages, 1 step from Home Page
   width: 70%;
 }
 
-/*
-Sub "About Me" Page, 1 step from Home Page
-*/
-
-.resume-text {
-  margin: auto;
-  padding: 10rem;
-  text-align: center;
-}
-
-/*
-Sub "Game Projects" Page, 1 step from Home Page
-*/
-
+/* Icon grid for displaying multiple images in square form */
 .icon-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(40rem, 1fr));
@@ -789,6 +776,39 @@ Sub "Game Projects" Page, 1 step from Home Page
 }
 
 .icon {
+  text-align: center;
+}
+
+/* Horizontal image gallery */
+.horizontal-gallery {
+  text-align:;
+  margin: auto;
+  padding: 0;
+  white-space: nowrap;
+  width: 150rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.horizontal-gallery li {
+  display: inline;
+  width: auto;
+  scroll-snap-align: start;
+}
+
+.horizontal-gallery-image img {
+  display: inline-block;
+  height: 50rem;
+  width: auto;
+}
+
+/*
+Sub "About Me" Page, 1 step from Home Page
+*/
+
+.resume-text {
+  margin: auto;
+  padding: 10rem;
   text-align: center;
 }
 
@@ -850,10 +870,10 @@ Sub "Writing" Page, 1 step from Home Page
 }
 
 /*
-Sub "Concept Art" Page, 1 step from Home Page
+Sub "Digital Art" Page, 1 step from Home Page
 */
 
-.sub-concept-art {
+.sub-digital-art {
   /* Set up the grid */
   display: grid;
   grid-template-columns:  40% 1fr;
@@ -862,7 +882,7 @@ Sub "Concept Art" Page, 1 step from Home Page
   height: 83vh;
 }
 
-.sub-concept-art-title {
+.sub-digital-art-title {
   /* Placing where the section sits on the website */
   grid-column: 1/3;
   grid-row: 1/2;
@@ -873,18 +893,18 @@ Sub "Concept Art" Page, 1 step from Home Page
   background: #cd3e3f;
 }
 
-.sub-concept-art-title p {
+.sub-digital-art-title p {
   font-size: 8rem;
   font-weight: bold;
 }
 
-.sub-concept-art-image {
+.sub-digital-art-image {
   /* Placing where the section sits on the website */
   grid-column: 1/2;
   grid-row: 2/3;
 }
 
-.sub-concept-art-image img {
+.sub-digital-art-image img {
   height: 100%;
   width: 100%;
   vertical-align: middle;
@@ -892,7 +912,7 @@ Sub "Concept Art" Page, 1 step from Home Page
   z-index: 1;
 }
 
-.sub-concept-art-text {
+.sub-digital-art-text {
   /* Placing where the section sits on the website */
   grid-column: 2/3;
   grid-row: 2/3;
@@ -972,13 +992,13 @@ Media Query for any device in Portait Mode (Mobile) BUT FOR SECTION CONTENT
     text-align: center;
   }
 
-  .concept-art {
+  .digital-art {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 60rem 1fr;
   }
 
-  .concept-art-text {
+  .digital-art-text {
     /* Placing where the section sits on the website */
     grid-column: 1/2;
     grid-row: 1/2;
@@ -987,7 +1007,7 @@ Media Query for any device in Portait Mode (Mobile) BUT FOR SECTION CONTENT
     margin: 10% 10rem;
   }
 
-  .concept-art-image {
+  .digital-art-image {
     /* Placing where the section sits on the website */
     grid-column: 1/2;
     grid-row: 2/3;
