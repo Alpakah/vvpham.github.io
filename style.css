@@ -13,7 +13,9 @@ body { /* Main Body */
   grid-template-columns: 25rem 2rem 1fr 6rem;
   grid-template-rows: 10rem 5rem 2rem 0 1fr;
 
-  background: red; /* CHANGE THIS TO WHITE!!!!! (Red to see flaws) */
+ /* CHANGE TO RED/WHITE TO CHECK ERRORS*/
+  background: red;
+
   margin: 0;
   font-color: #2d2f33;
 }
