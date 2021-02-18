@@ -794,6 +794,7 @@ Formatting of all Sub Pages, 1 step from Home Page
   display: inline;
   width: auto;
   scroll-snap-align: start;
+  list-style: none;
 }
 
 .horizontal-gallery-image img {
