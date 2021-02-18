@@ -461,16 +461,11 @@ Media Query for any device in Portait Mode (Mobile)
   padding: auto;
   padding-left: 5rem;
   padding-right: 5rem;
+  margin: auto;
 }
 
 .about-me-text p {
   font-size: 3rem;
-}
-
-.resume-text {
-  margin: auto;
-  padding: 10rem;
-  text-align: center;
 }
 
 /* "Game Projects" Section on the Home Page */
@@ -618,7 +613,7 @@ Media Query for any device in Portait Mode (Mobile)
   /* Set up the grid */
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 20rem 1fr;
+  grid-template-rows: 30rem 1fr;
   margin-bottom: 0;
   text-align: center;
 }
@@ -636,7 +631,7 @@ Media Query for any device in Portait Mode (Mobile)
 .contact-me-title h2 {
   border: 1rem solid white;
   padding: 2rem 5rem;
-  margin: 10rem 0rem;
+  margin: auto;
 }
 
 .contact-me-text {
@@ -646,6 +641,7 @@ Media Query for any device in Portait Mode (Mobile)
 
   text-align: left;
   margin: auto;
+  margin-top: 0;
   padding: 0;
 }
 
@@ -655,6 +651,14 @@ Formatting of all Sub Pages, 1 step from Home Page
 
 /* Sub Page Template WITH a title */
 .sub-page {
+  /* Set up the grid */
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 20rem 1fr;
+  margin-bottom: 0;
+  height: auto;
+}
+.sub-page-only {
   /* Set up the grid */
   display: grid;
   grid-template-columns: 1fr;
@@ -747,8 +751,25 @@ Formatting of all Sub Pages, 1 step from Home Page
   text-align: left;
 }
 
+.caption-text {
+  font-size: 2.5rem;
+  text-align: center;
+  margin: auto;
+  width: 70%;
+}
+
 /*
-Sub "Game Projects", Page 1 step from Home Page
+Sub "About Me" Page, 1 step from Home Page
+*/
+
+.resume-text {
+  margin: auto;
+  padding: 10rem;
+  text-align: center;
+}
+
+/*
+Sub "Game Projects" Page, 1 step from Home Page
 */
 
 .game-icon-grid {
@@ -836,33 +857,13 @@ Individual Game Pages
 Sub "Writing" Page, 1 step from Home Page
 */
 
-.sub-writing {
-  /* Set up the grid */
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 20rem 1fr;
-  margin-bottom: 0;
-  background:;
-}
-
-.sub-writing-title {
-  /* Placing where the section sits on the website */
-  grid-column: 1/2;
-  grid-row: 1/2;
-
-  text-align: left;
-  margin: 5rem 0;
-  padding: 0 5rem;
-  background: #cd3e3f;
-}
-
-.sub-writing-title p {
-  font-size: 8rem;
-  font-weight: bold;
-}
-
-.sub-writing-text {
-
+.DND-image {
+  width: 90%;
+  height: auto;
+  padding: 5%;
+  padding-bottom: 0;
+  margin: auto;
+  margin: 0;
 }
 
 /*
